@@ -1,0 +1,39 @@
+<div class="col-md-20 mx-auto">
+
+    <h1>Create Product</h1>
+
+<form class="column g-3" action="/create-product/0" method="post">
+     <input type="hidden" name="_method" value="POST">
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">Product name</label>
+    <input type="text" class="form-control" id="validationDefault01" value="" name="name" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Product Description</label>
+    <input type="text" class="form-control" name="description" id="validationDefault02" value="" required>
+  </div>
+  <div class="col-md-1">
+    <label for="validationDefault03" class="form-label">Price</label>
+    <input type="number" min="0" step="0.01" class="form-control" name="price"  id="validationDefault03" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label" >Category</label>
+        <select class="form-select form-select-sm" name="category_id" aria-label="Small select example"id="validationDefault04" required>
+            <option selected></option>
+              {{#each categoryList}}
+              <option value="{{this.id}}"  > {{this.name}}</option>
+              {{/each}}
+        </select>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="true" name="promotion" >
+        the product participating in the promotion
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+      <button  type="submit" class="btn btn-outline-dark">Save</button>
+  </div>
+</form>
+</div>

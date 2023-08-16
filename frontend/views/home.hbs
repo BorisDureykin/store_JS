@@ -1,0 +1,36 @@
+
+
+<div class="text-center">
+    <h2> Products for the Promotion </h2>
+<!--    Go to our <a href="/catalog" >Catalog</a>-->
+</div>
+<ul class="nav ">
+    {{#each productList}}
+             <div class="card" style="width: 18rem;">
+                  <img src="{{this.img}}" class="card-img-top" alt="No image">
+                 {{#if this.promotion}}
+                    <div class="spinner-grow" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                 {{else}}
+                    <div class="spinner-grow text-light" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                 {{/if}}
+                  <div class="card-body">
+                    <h5 class="card-title">{{this.name}}</h5>
+                    <p class="card-text">{{this.description}}</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Price: {{this.price}} ₽</li>
+                  </ul>
+                  <div class="card-body">
+                    <ul  >
+                        <div class="btn-group me-5">
+                            <a href="../product/{{this.id}}" class="btn btn-outline-dark">More...</a>
+                        </div>
+                </ul>
+          </div>
+        </div>
+    {{/each}}
+</ul>

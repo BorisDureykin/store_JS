@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+
+
+
+#logo {
+    width: 300px;
+    border: 2px solid white;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
+#logoForm {
+    width: 200px;
+    border: 2px solid white;
+
+    top: 10px;
+    left: 20px;
+}
+#logoFormCalculator {
+    width: 515px;
+}
+
+
+#task-list{
+    padding:3;
+    list-style:--;
+}
+
+#task-list li{
+    padding:10px 0;
+    font-weight: bolt;
+}
+.titleCalculator {
+
+  text-align: center;
+  font-family: 'Caprasimo', cursive;
+  font-weight: bold;
+  color: #212529;
+
+
+}
+.headerImage {
+  width:430px;
+  margin: auto;
+ }
+
+.mainCalculator {
+  width: 430px;
+  margin: auto;
+
+  border: 3px solid #212529;
+  box-shadow: inset 0px 1px 4px 0px #212529;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.calculator {
+  padding: 25px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.input {
+  border: 3px solid #212529;
+  border-radius: 6px;
+  height: 60px;
+  padding-right: 15px;
+  padding-top: center;
+  text-align: right;
+  margin-right: 6px;
+  font-family: 'Roboto', cursive;
+  font-size: 120%;
+  overflow-x: hidden;
+  transition: all .2s ease-in-out;
+}
+.input:hover {
+  border: 3px solid #212529;
+  -webkit-box-shadow: inset 0px 1px 4px 0px color=#212529;
+  box-shadow: inset 0px 1px 4px 0px #212529;
+}
+
+.buttons {}
+
+.operators {}
+
+.operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.operators div:hover {
+    color: #FFF;
+  background-color: #4d4d4d;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+
+}
+
+.operators div:active {
+  color: #f9f9f9;
+  font-weight: bold;
+
+}
+
+.leftPanel {
+  display: inline-block;
+}
+
+
+.numbers div {
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.numbers div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #bbb;
+}
+
+.numbers div:active {
+  color: #212529;
+  font-weight: bold;
+}
+
+.rightPanel {
+ display: inline-block;
+}
+.clear div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+  vertical-align: bottom;
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.clear div:hover {
+  color: #FFF;
+  background-color: #4d4d4d;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.clear div:active {
+ color: #f9f9f9;
+  font-weight: bold;
+}
+
+
+.result div {
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 4px 10px 0;
+
+  cursor: pointer;
+  color: #FFF;
+  background-color: #4d4d4d;
+  transition: all .2s ease-in-out;
+}
+
+.result div:hover {
+  background-color: #000000;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color:  #aaa;
+}
+
+.result div:active {
+  color: #f9f9f9;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.5rem;
+  color: #212529;
+}
