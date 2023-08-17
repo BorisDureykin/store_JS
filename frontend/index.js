@@ -250,31 +250,6 @@ app.get('/create-product', async (req, res) => {
     };
 });
 
-//// обработка маршрута отображения страницы Calculator !!!!
-//app.get('/calculator', async (req, res) => {
-//    try {
-//        const categoryList = await getCategoryList();
-//        const cart = await getCart();
-//        const totalItemCount = calculateTotalItemCount(cart);
-//        const totalCartPrice = calculateTotalCartPrice(cart);
-//        res.render('calculator', {
-//            title: 'Calculator | Store',
-//            categoryList: categoryList,
-//            cart: cart,
-//            totalItemCount: totalItemCount,
-//            totalCartPrice: totalCartPrice
-//        });
-//    } catch (error) {
-//        res.render('calculator', {
-//            title: 'Calculator | Store',
-//            categoryList: [],
-//            cart: [],
-//            totalItemCount: [],
-//            totalCartPrice: [],
-//        });
-//    }
-//});
-
 // обработка маршрута для отображения страницы создания категории !!!!
 app.get('/create-category', async (req, res) => {
      try {
