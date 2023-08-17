@@ -70,15 +70,10 @@ function calculation() {
       // сначала мы заменяем все цифры и точку пустой строкой, а затем разделяем
       let operators = inputString.replace(/[0-9]|\./g, "").split("");
 
-      console.log(inputString);
-      console.log(operators);
-      console.log(numbers);
-
       // теперь мы зацикливаемся на массиве и выполняем по одной операции за раз.
       // сначала разделите, затем умножьте, затем вычитание, а затем сложение
       // по мере продвижения мы изменяем исходный массив чисел и операторов
       // последним элементом, оставшимся в массиве, будет выходной
-
 
        let radic = operators.indexOf("√");
       while (radic != -1) {
@@ -134,18 +129,12 @@ function calculation() {
       resultDisplayed = true; // флажок поворота, если отображается результат
 }
 
-
 // при нажатии кнопки "%"
 resultPercent.addEventListener("click", function() {
 
       let inputString = input.innerHTML;
       let numbers = inputString.split(/\+|\-|\×|\÷|\%|\√|\²|\³/g);
       let operators = inputString.replace(/[0-9]|\./g, "").split("");
-
-      console.log(inputString);
-      console.log(operators);
-      console.log(operators[0])
-      console.log(numbers);
 
     if (operators[0]==("×")){
           let multiply = operators.indexOf("×");
@@ -185,15 +174,6 @@ resultPercent.addEventListener("click", function() {
 
     resultDisplayed = true;
 });
-
-//// при нажатии кнопки "√"
-//resultRadic.addEventListener("click", calculation);
-//
-//// при нажатии кнопки "²"
-//resultExponent2.addEventListener("click", calculation);
-//
-//// при нажатии кнопки "³"
-//resultExponent3.addEventListener("click", calculation);
 
 // при нажатии кнопки "равно"
 result.addEventListener("click", calculation);
